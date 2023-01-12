@@ -1,0 +1,14 @@
+Bom dia a todos sou Aparecido de seles tenho 25 anos , faço o curso de desenvolvimento de Sistemas há 1 ano e meio 
+
+
+E durante o curso gostei muito de trbalhar tanto com back-end que é basicamente a parte de interação com o banco de dados ,como na parte do front-end que seria a parte visual da aplicação 
+
+E eu fiquei responsável por ajudar na parte de bacK-end e também pelo Mobile 
+
+
+com o recente aumento de tecnologia , a funilaria notou uma forte perda dos clientes para a concorrencia , porque eles tem sistemas e tecnologias mais avançadas que as as dela ,pensando nisso com base na necessidade desses contatos que eles viram 
+
+
+
+Nossa aplicação foi feita para automatizar o processo de orçamentos de uma funilaria , ultilizando um serviço OCR ( que é um serviço de leitura de caracteres )  de inteligencia artificial para leitura e transcrição de placas de veículos.
+Resumindo a pessoa interessada nos serviços da funilaria ela pode se cadastrar somente colocando a foto da sua placa do veículo e ja vem automaticamente as informações do veículo , ou se preferir ela mesma pode colocar as informações, e logo despois ela ja pode ver o preço dos serviços que gostaria que fossem feitos , assim não precisando perder tempo em filas ou mesmo em ligações

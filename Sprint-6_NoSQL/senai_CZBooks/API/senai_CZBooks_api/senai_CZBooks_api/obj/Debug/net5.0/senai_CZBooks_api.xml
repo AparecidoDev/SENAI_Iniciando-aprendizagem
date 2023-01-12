@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai_CZBooks_api</name>
+    </assembly>
+    <members>
+        <member name="T:senai_CZBooks_api.Controllers.LivrosController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos Livros 
+            </summary>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.IAutorRepository.Listar">
+            <summary>
+            Lista todos os Autores
+            </summary>
+            <returns>Uma lista de Autores</returns>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.IAutorRepository.Cadastrar(senai_CZBooks_api.Domains.Autor)">
+            <summary>
+            Cadastra um novo Autor
+            </summary>
+            <param name="NovoAutor">Objeto NovoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.ICategoriaLivroRepository.Listar">
+            <summary>
+            Lista todos as Categoria de Livros 
+            </summary>
+            <returns>Uma lista de Categoria de Livros </returns>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.ICategoriaLivroRepository.Cadastrar(senai_CZBooks_api.Domains.CategoriaLivro)">
+            <summary>
+            Cadastra um nova CategoriaLivro
+            </summary>
+            <param name="NovaCategoriaLivro">Objeto NovaCategoriaLivro que será cadastrada</param>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.IInstituicaoRepository.Listar">
+            <summary>
+            Lista todos as Instituições
+            </summary>
+            <returns>Uma lista de Instituiçõess</returns>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.IInstituicaoRepository.Cadastrar(senai_CZBooks_api.Domains.Instituicao)">
+            <summary>
+            Cadastra um nova Instituição
+            </summary>
+            <param name="NovaInstituicao">Objeto NovaInstituicao que será cadastrada</param>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.ILivroRepository.Listar">
+            <summary>
+            Lista todos os Livros
+            </summary>
+            <returns>Uma lista de Livros</returns>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.ILivroRepository.Cadastrar(senai_CZBooks_api.Domains.Livro)">
+            <summary>
+            Cadastra um novo Livro
+            </summary>
+            <param name="NovoLivro">Objeto NovoLivro que será cadastrado</param>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.ITipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os tipos de Usuários
+            </summary>
+            <returns>Uma lista de tipos de Usuários</returns>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.ITipoUsuarioRepository.Cadastrar(senai_CZBooks_api.Domains.TipoUsuario)">
+            <summary>
+            Cadastra um novo tipo de Usuário
+            </summary>
+            <param name="NovoTipoUsuario">Objeto NovoTipoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os Usuários
+            </summary>
+            <returns>Uma lista de Usuários</returns>
+        </member>
+        <member name="M:senai_CZBooks_api.Interfaces.IUsuarioRepository.Cadastrar(senai_CZBooks_api.Domains.Usuario)">
+            <summary>
+            Cadastra um novo Usuário
+            </summary>
+            <param name="NovoUsuario">Objeto NovoUsuario que será cadastrado</param>
+        </member>
+        <member name="T:senai_CZBooks_api.Repositories.LivroRepository">
+            <summary>
+            Classe responsável pelo repositório dos Livros
+            </summary>
+        </member>
+        <member name="F:senai_CZBooks_api.Repositories.LivroRepository.ctx">
+            <summary>
+            Objeto contexto por onde serão chamados os métodos do EF Core
+            </summary>
+        </member>
+        <member name="M:senai_CZBooks_api.Repositories.LivroRepository.Cadastrar(senai_CZBooks_api.Domains.Livro)">
+            <summary>
+            Cadastra um novo Livro
+            </summary>
+            <param name="NovoLivro"></param>
+        </member>
+        <member name="M:senai_CZBooks_api.Repositories.LivroRepository.Listar">
+            <summary>
+            Lista todos os Livros
+            </summary>
+            <returns>Uma Lista de Livros</returns>
+        </member>
+        <member name="T:senai_CZBooks_api.Repositories.TipoUsuarioRepository">
+            <summary>
+            Classe responsável pelo repositório dos Tipos de Usuarios
+            </summary>
+        </member>
+        <member name="F:senai_CZBooks_api.Repositories.TipoUsuarioRepository.ctx">
+            <summary>
+            Objeto contexto por onde serão chamados os métodos do EF Core
+            </summary>
+        </member>
+        <member name="M:senai_CZBooks_api.Repositories.TipoUsuarioRepository.Cadastrar(senai_CZBooks_api.Domains.TipoUsuario)">
+            <summary>
+            Cadastra um novo Usuário
+            </summary>
+            <param name="NovoUsuario">Objeto NovoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:senai_CZBooks_api.Repositories.TipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os Usuários
+            </summary>
+            <returns>Uma lista de Usuários</returns>
+        </member>
+        <member name="T:senai_CZBooks_api.Repositories.UsuarioRepository">
+            <summary>
+            Classe responsável pelo repositório dos Usuários
+            </summary>
+        </member>
+        <member name="F:senai_CZBooks_api.Repositories.UsuarioRepository.ctx">
+            <summary>
+            Objeto contexto por onde serão chamados os métodos do EF Core
+            </summary>
+        </member>
+        <member name="M:senai_CZBooks_api.Repositories.UsuarioRepository.Cadastrar(senai_CZBooks_api.Domains.Usuario)">
+            <summary>
+            Cadastra um novo Usuário
+            </summary>
+            <param name="NovoUsuario"></param>
+        </member>
+        <member name="M:senai_CZBooks_api.Repositories.UsuarioRepository.Listar">
+            <summary>
+            Lista todos os Usuários
+            </summary>
+            <returns>Uma lista de Usuários</returns>
+        </member>
+        <member name="T:senai_CZBooks_api.ViewModels.LoginViewModel">
+            <summary>
+            Classe responsável pelo modelo de Login
+            </summary>
+        </member>
+    </members>
+</doc>

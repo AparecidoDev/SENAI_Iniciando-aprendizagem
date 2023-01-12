@@ -1,0 +1,67 @@
+CREATE DATABASE ClinicaVeterinaria
+GO
+
+USE ClinicaVeterinaria;
+GO
+
+CREATE TABLE Clinica
+(
+	IdClinica INT PRIMARY KEY IDENTITY
+	,RazaoSocail VARCHAR (200)
+	,CNPJ CHAR(14)
+	,Endereco VARCHAR(200)
+);
+GO 
+
+CREATE TABLE TipoPet
+(
+	IdTipoPet INT PRIMARY KEY IDENTITY
+	,Descricao VARCHAR (200)
+
+);
+GO
+
+CREATE TABLE Dono
+(
+	IdDono INT PRIMARY KEY IDENTITY
+	,Nome VARCHAR (200)
+);
+GO
+
+CREATE TABLE Raca
+(
+	IdRaca INT PRIMARY KEY IDENTITY
+	,IdTipoPet INT FOREIGN KEY REFERENCES TipoPet (IdTipoPet)
+	,Descricao VARCHAR (200)
+);
+GO
+
+CREATE TABLE Pet
+(
+	IdPet INT PRIMARY KEY IDENTITY
+	,IdRaca INT FOREIGN KEY REFERENCES Raca (IdRaca)
+	,IdDono INT FOREIGN KEY REFERENCES Dono (IdDono)
+	,Nome  VARCHAR (200)
+	,DataNascimento DATE
+);
+GO
+
+CREATE TABLE Veterinario
+(
+	 IdVeterinario INT PRIMARY KEY IDENTITY
+	,IdClinica INT FOREIGN KEY REFERENCES Clinica(IdClinica)
+	,Nome  VARCHAR(200)
+	,CRMV CHAR (6)
+);
+GO
+
+CREATE TABLE Atendimento
+(
+	IdAtendimento	 INT PRIMARY KEY IDENTITY
+	,IdVeterinario	 INT FOREIGN KEY REFERENCES Veterinario(IdVeterinario)  
+	,IdPet			 INT FOREIGN KEY REFERENCES Pet (IdPet)
+	,Descricao		 VARCHAR (200)
+	,DataAtendimento DATE
+);
+GO
+

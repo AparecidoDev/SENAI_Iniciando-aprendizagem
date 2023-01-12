@@ -1,0 +1,92 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    border:  0%;
+    box-sizing: border-box;
+}
+body{
+    width: 1350px;
+    height: 950;
+    /* background:red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+header{
+    width: 100%;
+    height: 90px;
+    font-size: 60px;
+    font-weight: 500;
+    background-color: #3F3D56;
+    font-family: 'lora', Courier, monospace;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
+}
+
+.flex-center-bt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.campo{
+    width: 1200px;
+    height: 656px;
+    background: #55def054;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campo h3{
+    width: 100%;
+    height: 64px;
+    padding-left: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #703FFC;
+    border-radius: 14PX;
+}
+.Nomes{
+    width: 966px;
+    height: 399px;
+    padding: 20px;
+    margin-top: 45px;
+    font-size: 20px;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.sair{
+    width: 966px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    /* font-weight: 400px; */
+    font-family: 'lora', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
